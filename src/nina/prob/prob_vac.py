@@ -1,5 +1,5 @@
 import numpy as np
-from src.prob.prob import Prob
+from nina.prob.prob import Prob
 
 class Prob3nu(Prob):
     __units = 1.27
