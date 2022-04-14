@@ -1,7 +1,9 @@
+from src.nina.engine.object import Object
 from math import pi
-class Source():
+class Source(Object):
     '''recebe o fluxo (funcao)'''
-    def __init__(self, flux):
+    def __init__(self, flux, position):
+        super().__init__(position)
         self.flux = flux
 
     '''calcula o fluxo em funcao da energia e distancia'''
