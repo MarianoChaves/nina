@@ -1,4 +1,4 @@
-from src.nina.engine.object import Object
+from nina.engine.object import Object
 from math import pi
 class Source(Object):
     '''recebe o fluxo (funcao)'''

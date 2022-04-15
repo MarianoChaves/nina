@@ -1,4 +1,4 @@
-from src.nina.engine.object import Object
+from nina.engine.object import Object
 class Detector(Object):
     '''recebe secao de choque'''
     def __init__(self, xsec, position):
