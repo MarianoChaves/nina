@@ -32,7 +32,7 @@ class Bin:
     &#34;&#34;&#34;
     Class nina.Bin: an histogram bin.
 
-    Atributes:
+    atributes:
         - min (float): min value of the bin.
         - min (float): max value of the bin.
     &#34;&#34;&#34;
@@ -43,6 +43,7 @@ class Bin:
 class Histogram:
     &#34;&#34;&#34;
     Class nina.Histogram: abstract representation of an histogram.
+
         - args:
             - bin_list (list): a list of floats with the binning.
         - atributes:
@@ -56,7 +57,7 @@ class Histogram:
     @staticmethod
     def getUniform(min, max, n_div):
         &#34;&#34;&#34;
-        getUniform(min, max, n_div): static method to create an uniform binned histogram
+        getUniform(min, max, n_div): static method to create an uniform binned histogram.
             - args:
                 - min (float): min value of the histogram.
                 - max (float): max value of the histogram.
@@ -86,11 +87,9 @@ class Histogram:
 </code></dt>
 <dd>
 <div class="desc"><p>Class nina.Bin: an histogram bin.</p>
-<h2 id="atributes">Atributes</h2>
-<ul>
-<li>min (float): min value of the bin.</li>
-<li>min (float): max value of the bin.</li>
-</ul></div>
+<p>atributes:
+- min (float): min value of the bin.
+- min (float): max value of the bin.</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -99,7 +98,7 @@ class Histogram:
     &#34;&#34;&#34;
     Class nina.Bin: an histogram bin.
 
-    Atributes:
+    atributes:
         - min (float): min value of the bin.
         - min (float): max value of the bin.
     &#34;&#34;&#34;
@@ -113,11 +112,12 @@ class Histogram:
 <span>(</span><span>bin_list)</span>
 </code></dt>
 <dd>
-<div class="desc"><p>Class nina.Histogram: abstract representation of an histogram.
-- args:
-- bin_list (list): a list of floats with the binning.
+<div class="desc"><p>Class nina.Histogram: abstract representation of an histogram.</p>
+<pre><code>- args:
+    - bin_list (list): a list of floats with the binning.
 - atributes:
-- bins ([nina.Bin]): a list of bins.</p></div>
+    - bins ([nina.Bin]): a list of bins.
+</code></pre></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -125,6 +125,7 @@ class Histogram:
 <pre><code class="python">class Histogram:
     &#34;&#34;&#34;
     Class nina.Histogram: abstract representation of an histogram.
+
         - args:
             - bin_list (list): a list of floats with the binning.
         - atributes:
@@ -138,7 +139,7 @@ class Histogram:
     @staticmethod
     def getUniform(min, max, n_div):
         &#34;&#34;&#34;
-        getUniform(min, max, n_div): static method to create an uniform binned histogram
+        getUniform(min, max, n_div): static method to create an uniform binned histogram.
             - args:
                 - min (float): min value of the histogram.
                 - max (float): max value of the histogram.
@@ -158,7 +159,7 @@ class Histogram:
 <span>def <span class="ident">getUniform</span></span>(<span>min, max, n_div)</span>
 </code></dt>
 <dd>
-<div class="desc"><p>getUniform(min, max, n_div): static method to create an uniform binned histogram
+<div class="desc"><p>getUniform(min, max, n_div): static method to create an uniform binned histogram.
 - args:
 - min (float): min value of the histogram.
 - max (float): max value of the histogram.
@@ -172,7 +173,7 @@ class Histogram:
 <pre><code class="python">@staticmethod
 def getUniform(min, max, n_div):
     &#34;&#34;&#34;
-    getUniform(min, max, n_div): static method to create an uniform binned histogram
+    getUniform(min, max, n_div): static method to create an uniform binned histogram.
         - args:
             - min (float): min value of the histogram.
             - max (float): max value of the histogram.

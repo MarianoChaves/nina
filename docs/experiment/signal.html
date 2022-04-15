@@ -27,7 +27,7 @@
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">class Signal:
-    def __init__(self, detector, source, prob, histogram, background, signal_name = &#34;neutrino&#34;, norm = 1):
+    def __init__(self, detector, source, prob, histogram, background = [], signal_name = &#34;neutrino&#34;, norm = 1):
         self.detector = detector
         self.source = source
         self.prob = prob
@@ -71,7 +71,7 @@
 <dl>
 <dt id="nina.experiment.signal.Signal"><code class="flex name class">
 <span>class <span class="ident">Signal</span></span>
-<span>(</span><span>detector, source, prob, histogram, background, signal_name='neutrino', norm=1)</span>
+<span>(</span><span>detector, source, prob, histogram, background=[], signal_name='neutrino', norm=1)</span>
 </code></dt>
 <dd>
 <div class="desc"></div>
@@ -80,7 +80,7 @@
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">class Signal:
-    def __init__(self, detector, source, prob, histogram, background, signal_name = &#34;neutrino&#34;, norm = 1):
+    def __init__(self, detector, source, prob, histogram, background = [], signal_name = &#34;neutrino&#34;, norm = 1):
         self.detector = detector
         self.source = source
         self.prob = prob

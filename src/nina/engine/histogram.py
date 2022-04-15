@@ -4,7 +4,7 @@ class Bin:
     """
     Class nina.Bin: an histogram bin.
 
-    Atributes:
+    atributes:
         - min (float): min value of the bin.
         - min (float): max value of the bin.
     """
@@ -15,6 +15,7 @@ class Bin:
 class Histogram:
     """
     Class nina.Histogram: abstract representation of an histogram.
+
         - args:
             - bin_list (list): a list of floats with the binning.
         - atributes:
@@ -28,7 +29,7 @@ class Histogram:
     @staticmethod
     def getUniform(min, max, n_div):
         """
-        getUniform(min, max, n_div): static method to create an uniform binned histogram
+        getUniform(min, max, n_div): static method to create an uniform binned histogram.
             - args:
                 - min (float): min value of the histogram.
                 - max (float): max value of the histogram.
