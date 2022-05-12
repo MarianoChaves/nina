@@ -16,18 +16,19 @@ class Signal:
             event.append( self.norm*bin_event )
         return event
     
-    # Calculate integral in the bin
+    # Calculate integral in the bin (Simpson rule)
     def getEventInBin(self, bin):
-        Emean = (bin.max+bin.min)/2
-        dE = (bin.max-bin.min)
-
+        dE = (bin.max-bin.min)/6
+        Emin = bin.min
+        Emax = bin.min
+        Emean = (Emin+Emax)/2
         distance = self.detector.distanceFrom(self.source)
-
-        xsec = self.detector.getXsec(Emean)
-        flux = self.source.getFlux(Emean, distance)
-        prob = self.prob.calculate(Emean)
-
-        result = ( xsec * flux * prob ) * dE
+        #Applying the formula
+        for energy, weight in zip( [Emin, Emean, Emax] , [1,4,1] ):
+            xsec = self.detector.getXsec(energy)
+            flux = self.source.getFlux(energy, distance)
+            prob = self.prob.calculate(energy)
+            result += weight * ( xsec * flux * prob ) * dE
         self.events = result
         return result
 

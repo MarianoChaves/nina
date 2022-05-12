@@ -18,6 +18,7 @@ class Histogram:
 
         - args:
             - bin_list (list): a list of floats with the binning.
+
         - atributes:
             - bins ([nina.Bin]): a list of bins.
     """
@@ -30,14 +31,14 @@ class Histogram:
     def getUniform(min, max, n_div):
         """
         getUniform(min, max, n_div): static method to create an uniform binned histogram.
+
             - args:
                 - min (float): min value of the histogram.
                 - max (float): max value of the histogram.
-                - n_div (int): number of division of the histogram
+                - n_div (int): number of division of the histogram.
+
             - returns:
                 - histogram (nina.Histogram): the histogram created
-
-
         """
         bins = np.linspace(min, max, int(n_div)+1)
         hist = Histogram(bins)
