@@ -1,3 +1,4 @@
+import numpy as np
 class Signal:
     def __init__(self, detector, source, prob, histogram, background = [], signal_name = "neutrino", norm = 1):
         self.detector = detector
@@ -14,7 +15,7 @@ class Signal:
         for bin in self.histogram.bins:
             bin_event = self.getEventInBin(bin)
             event.append( self.norm*bin_event )
-        return event
+        return np.numpy(event)
     
     # Calculate integral in the bin (Simpson rule)
     def getEventInBin(self, bin):

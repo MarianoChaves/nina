@@ -27,8 +27,8 @@ class Histogram:
         for i in range( len(bin_list)-1 ):
             new_bin = Bin(bin_list[i],bin_list[i+1])
             self.bins.append( new_bin )
-    @staticmethod
-    def getUniform(min, max, n_div):
+    @classmethod
+    def getUniform(cls, min, max, n_div):
         """
         getUniform(min, max, n_div): static method to create an uniform binned histogram.
 
@@ -41,5 +41,5 @@ class Histogram:
                 - histogram (nina.Histogram): the histogram created
         """
         bins = np.linspace(min, max, int(n_div)+1)
-        hist = Histogram(bins)
+        hist = cls(bins)
         return hist

@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-   name='NInA',
+   name='nina',
    version='0.0',
    description='Neutrino interface application',
    author='Mariano Chaves',
