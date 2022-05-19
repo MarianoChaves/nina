@@ -1,3 +1,6 @@
 # nina
 
-Developement installation: pip install -e .
+Digitar comando na pasta do nina
+> pip install -e .
+
+> import nina
